@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zforw/CLionProjects/SweepBomb/cmake-build-debug/Game.h
+cstdio
+-
+unistd.h
+-
+ctime
+-
+queue
+-
+iomanip
+-
+cstdlib
+-
+iostream
+-
+
+/Users/zforw/CLionProjects/SweepBomb/main.cpp
+cmake-build-debug/Game.h
+/Users/zforw/CLionProjects/SweepBomb/cmake-build-debug/Game.h
+
