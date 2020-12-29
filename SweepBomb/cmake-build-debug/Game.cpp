@@ -139,27 +139,6 @@ int Game::Count(int i,int j){
     }
     return b;
 }
-/*
-void Game::Count(int cord) {
-    int i = getCord(cord).first,j = getCord(cord).second;
-    system("clear");
-    showBoard(SHOW_ID);
-    cout << "Connected blocks : " << dfs(i,j) << endl;
-    int b = 0;
-    for(int k = 0;k < 4;++k){
-        int nx = i + dx[k];
-        int ny = j + dy[k];
-        if(Check(nx,ny) == false){
-            if(map[nx][ny] == -1){
-                b++;
-            }
-        }
-    }
-    map[i][j] = (b==0)?(-3):b;
-    showBoard(SHOW_NORMAL);
-    cout << "Current score : " << score << endl;
-}
- */
 pair<int,int> Game::getCord(int cord) {
     int j = cord / N;
     if(cord % N == 0) j--;

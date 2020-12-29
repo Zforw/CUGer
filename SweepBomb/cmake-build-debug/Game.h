@@ -28,7 +28,7 @@ using namespace std;
 #define BOMB -1
 #define UNUSED -2
 
-//delta of x,y for Count()
+//delta x,y
 const int dx[4] = {0,1,-1,0};
 const int dy[4] = {1,0,0,-1};
 class Game {
@@ -41,6 +41,8 @@ public:
         //free the memory of map and u
         delete map;
         delete u;
+        map = NULL;
+        u = NULL;
     }
     //initialize
     void init();
