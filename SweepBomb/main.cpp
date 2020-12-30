@@ -18,7 +18,7 @@ int main() {
             int x;
             cout << "Input a id of an point:";
             cin >> x;
-            int state = g.mark(x);
+            int state = g.mark(x+1);
             switch (state) {
                 case STATE_INVALID_COORDINATE:
                     cout << "INVALID COORDINATE!!!" << endl;
