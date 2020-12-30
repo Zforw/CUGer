@@ -43,7 +43,7 @@ void Game::showBoard(int cho) {
         cout << "|";
         for(int j = 0;j < N;++j){
             if(cho == SHOW_ID){
-                cout << setw(2) << i*N  + (j+1) << "|";
+                cout << setw(2) << i*N  + j << "|";
             }
             else if(cho == SHOW_BOMB){
                 if(map[i][j] == -1) cout << "💣|";
@@ -65,7 +65,7 @@ void Game::showBoard(int cho) {
     cout << "|";
     for(int j = 0;j < N;++j){
         if(cho == SHOW_ID) {
-            cout << setw(2) << (N-1)*N + j + 1<< "|";
+            cout << setw(2) << (N-1)*N + j << "|";
         }else if(cho == SHOW_BOMB){
             if(map[N-1][j] == -1) cout << "💣|";
             else cout << setw(2) << "  |";
